@@ -1,0 +1,23 @@
+{
+  "name": "feathersjs-serverless",
+  "version": "0.0.1",
+  "description": "This is a feathersjs connector to the Serverless Framework ⚡️",
+  "main": "src/",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adrianovalente/feathersjs-serverless.git"
+  },
+  "keywords": [
+    "feathersjs",
+    "serverless"
+  ],
+  "author": "Adriano Valente <me@dri.cool>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/adrianovalente/feathersjs-serverless/issues"
+  },
+  "homepage": "https://github.com/adrianovalente/feathersjs-serverless#readme"
+}
