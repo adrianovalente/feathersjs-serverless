@@ -9,7 +9,7 @@ const feathers = require('@feathersjs/feathers')
 const serverless = require('feathersjs-serverless')
 
 const Todos = {
-  async find () => ([{
+  find: async () => ([{
     description: 'Build a nice application'
   }, {
     description: 'Deploy it using Serverless'
