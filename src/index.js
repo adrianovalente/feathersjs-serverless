@@ -4,7 +4,7 @@ const getService = require('./get-service')
 const getArgs = require('./get-args')
 const { getFeathersMethod } = require('./methods')
 
-const serverlessApp = feathersApp => {
+module.exports = feathersApp => {
   const mixin = {
     set (key, value) {
       if (!this.variables) {
@@ -88,5 +88,3 @@ const serverlessApp = feathersApp => {
 
   return Proto.mixin(mixin, feathersApp)
 }
-
-module.exports.serverlessApp = serverlessApp
