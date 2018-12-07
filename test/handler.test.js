@@ -1,5 +1,5 @@
 const feathers = require('@feathersjs/feathers')
-const { serverlessApp } = require('../handler')
+const serverlessApp = require('../src')
 
 test('set/get api express-like', () =>
   expect(serverlessApp()

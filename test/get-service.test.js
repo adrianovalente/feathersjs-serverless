@@ -1,5 +1,5 @@
 const feathers = require('@feathersjs/feathers')
-const getService = require('../get-service')
+const getService = require('../src/get-service')
 
 const dummyService = { find: () => [] }
 const feathersApp = feathers()
