@@ -42,9 +42,10 @@ module.exports = feathersApp => {
         const {
           path,
           httpMethod: method,
-          queryStringParameters: query,
           body: bodyAsString
         } = event
+
+        const query = event.queryStringParameters || {}
 
         const body = bodyAsString
           ? JSON.parse(bodyAsString)
