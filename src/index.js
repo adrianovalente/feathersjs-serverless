@@ -40,7 +40,7 @@ module.exports = feathersApp => {
         await self.setupPromise
 
         const {
-          path,
+          resource,
           httpMethod: method,
           queryStringParameters: query,
           body: bodyAsString
@@ -50,12 +50,12 @@ module.exports = feathersApp => {
           ? JSON.parse(bodyAsString)
           : {}
 
-        const { service: serviceName, feathersId } = getService(self, path)
+        const { service: serviceName, feathersId } = getService(self, resource)
 
         if (!serviceName || !self.service(serviceName)) {
           return cb(null, {
             statusCode: 404,
-            body: JSON.stringify({ error: `Service not found: ${path}` })
+            body: JSON.stringify({ error: `Service not found: ${resource}` })
           })
         }
 
