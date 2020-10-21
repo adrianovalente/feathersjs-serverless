@@ -17,7 +17,7 @@ test('integration test: happy path', async () => {
     })
     .handler()
 
-  await app({ path: 'hello', httpMethod: 'GET' }, null, cb)
+  await app({ resource: 'hello', httpMethod: 'GET' }, null, cb)
 
   expect(cb).toHaveBeenCalledWith(null, { body: JSON.stringify({ data: fooBar }) })
 })
