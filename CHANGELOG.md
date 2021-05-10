@@ -1,5 +1,8 @@
 ## CHANGELOG
 
+### 0.3.0
+- Bump dependencies
+
 ### 0.2.0
 - Use `resource` rather than `path` to find service
 
