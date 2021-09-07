@@ -1,6 +1,6 @@
 {
   "name": "feathersjs-serverless",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "description": "This is a feathersjs connector to the Serverless Framework ⚡️",
   "main": "src/",
   "scripts": {
