@@ -180,4 +180,7 @@ tags
 # Persistent undo
 [._]*.un~
 
+# Jetbrains (webstorm)
+.idea
+
 # End of https://www.gitignore.io/api/osx,vim,node,linux,serverless,sublimetext
