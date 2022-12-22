@@ -3,6 +3,7 @@ sudo: false
 
 node_js:
   - 10
+  - 16
 
 script:
   - npm run lint && npm test
